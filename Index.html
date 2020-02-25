@@ -25,7 +25,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="fonts/font-awesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
   <!-- Favicon
@@ -37,16 +42,24 @@
 <body>
   <header class="main_nav green">
     <div class="container">
-      <div class="twelve columns">
-
+      <div class="row"></div>
+      <div class="twelve columns topnav" id="myTopnav">
+        <!--Navbar-->
+          <a href="#home" class="active">Home</a>
+          <a href="#news">Portfolio</a>
+          <a href="#contact">About</a>
+          <a href="#about">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> 
       </div>
+      </div>
+      <!--Navbar-->
+    </div>
     </div>
   </header>
-
   <div class="container main">
     <div class="row">
       <div class="four columns portfolio">
-        <img src="images/chester_sofa.jpg" />
+        <a class="image_link" href="images/chester_sofa.jpg"> <img src="images/chester_sofa.jpg" /></a>
       </div>
       <div class="four columns portfolio">
         <img src="images/dresuar.jpg" />
@@ -58,25 +71,25 @@
 
     <div class="row">
       <div class="four columns portfolio">
-        <img src="images/chester_sofa.jpg" />
+        <img src="images/lampshade.jpg" />
       </div>
       <div class="four columns portfolio">
-        <img src="images/chester_sofa.jpg" />
+        <img src="images/retro_clock.jpg" />
       </div>
       <div class="four columns portfolio">
-        <img src="images/chester_sofa.jpg" />
+        <img src="images/sword.jpg" />
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="margin-bottom: 10%">
       <div class="four columns portfolio">
-
+        <img src="images/tire.jpg" />
       </div>
       <div class="four columns portfolio">
-
+        <img src="images/undergroundsign.jpg" />
       </div>
       <div class="four columns portfolio">
-
+        <img src="images/undergroundsign.jpg" />
       </div>
     </div>
   </div>
@@ -88,7 +101,7 @@
         <img class="avatar" src="images/DSC_7307_2.jpg" />
       </div>
       <div class="eight columns">
-        <h2 class="bio">About myself</h2>
+        <h2 class="bio">About Myself</h2>
         <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, officiis
           porro consectetur eaque molestiae ipsum maxime assumenda voluptas odio dolores inventore
           aut facere expedita laborum ab deleniti eveniet amet. </p>
@@ -99,21 +112,26 @@
     <div class="container">
       <div class="row twelve columns">
         <ul class="social">
-          <li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-          <li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
-          <li class="instagram"><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
-          <li class="flickr"><a href="#"><i class="fa fa-flickr fa-lg"></i></a></li>
-          <li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
-          <li class="linkedin"><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+          <li class="instagram"><a href="https://www.instagram.com/nck_photography/?hl=tr" target="blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+          <li class="icon500px"><a href="https://500px.com/nurayck" target="blank"><i class="fa fa-500px fa-lg"></i></a></li>
         </ul>
       </div>
       <div class="row twelve columns">
-        <p>&copy; 2020. All Rights Reserved.</p>
+        <p class="copyright">&copy; 2020. All Rights Reserved.</p>
       </div>
     </div>
 
   </footer>
   <!-- End Document-->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script type="text/Javascript">
+   $(document).ready(function() {
+    $('.image-link').magnificPopup({type:'image'});
+  });
+  </script>
+
+
 </body>
 
 </html>
