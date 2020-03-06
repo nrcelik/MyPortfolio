@@ -70,7 +70,7 @@ hr.solid {
  
 /* Header & Navigation
 -------------------------------------------------------------------------*/
-/* .topnav{
+.topnav{
     background-color: transparent;
     overflow: hidden;
     padding: 1% 0;
@@ -98,43 +98,12 @@ font-size: 19px;
 
 .topnav a:hover{
     background-color:rgb(38, 0, 77);
-} */
 
-.topnav {
-  overflow: hidden;
-  background-color: #001a00;
-  padding: 1% 0;
-  display: block;
- 
-}
-
-/* Navbar links */
-.topnav a {
-  float:right; 
-display:block;
-color:white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 19px;
-}
-
-.topnav .icon{
-  display: none;
-}
-
-.topnav a:hover{
-  background-color:rgb(38, 0, 77);
-}
-
-.active{
-  background-color:rgb(102, 0, 204);
-  color:white;
 }
 
 /* Page content */
 .content {
-  padding: px;
+  padding: 16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -142,7 +111,6 @@ font-size: 19px;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index:2;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -183,8 +151,8 @@ img:hover{opacity: 0.5;}
 .modal-content {
   margin: auto;
   display: block;
-  width: 50%;
-  max-width: 500px;
+  width: 80%;
+  max-width: 700px;
 }
 
 /* Caption of Modal Image */
@@ -261,7 +229,7 @@ ul.social li{
 ul.social li a{color:#666;}
 ul.social li.instagram a:hover{color: rgb(204, 0, 102)}
 ul.social li.icon500px a:hover{color: rgb(34, 48, 54)}
-ul.social li.mailMe a:hover{color:red}
+ul.social li.mail a:hover{color: rgb(34, 48, 54)}
 
 p.copyright{
     text-align: center;
@@ -282,7 +250,7 @@ h2.bio{font-size: 2.5em;}
 
 p.bio{font-size: 2.5em; color: tomato;}
 ul.social li a{font-size: .75em;}
- .topnav a:not(:first-child){display: none;}
+.topnav a:not(:first-child){display: none;}
 .topnav a.icon{
     float: right;
     display: block;
@@ -300,4 +268,4 @@ ul.social li a{font-size: .75em;}
       display: block;
       text-align: left;
     }
-} 
+}

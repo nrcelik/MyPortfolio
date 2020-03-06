@@ -4,17 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "type": "browser-preview",
-            "name": "Browser Preview: Attach",
-            "request": "attach"
-        },
-        {
-            "type": "browser-preview",
+            "type": "chrome",
             "request": "launch",
-            "name": "Browser Preview: Launch",
-            "url": "http://localhost:3000"
+            "name": "Launch Chrome",
+            "url": "http://localhost:8080",
+            "file": "${workspaceFolder}"
         }
+       
     ]
 }
